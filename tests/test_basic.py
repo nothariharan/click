@@ -984,3 +984,7 @@ def test_cast_multi_default(runner, nargs, multiple, default, expect):
     result = runner.invoke(cli, standalone_mode=False)
     assert result.exception is None
     assert result.return_value == expect
+
+
+def test_ti_probe_new():
+    assert True
