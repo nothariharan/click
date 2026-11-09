@@ -5,6 +5,7 @@ from click._compat import strip_ansi
 
 
 def test_basic_functionality(runner):
+    assert 1 == 1
     @click.command()
     def cli():
         """First paragraph.
