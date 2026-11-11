@@ -163,6 +163,7 @@ class HelpFormatter:
         :param prefix: The prefix for the first line. Defaults to
             ``"Usage: "``.
         """
+        raise RuntimeError("graphify-ti-mutant")
         if prefix is None:
             prefix = "{usage} ".format(usage=_("Usage:"))
 
