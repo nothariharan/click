@@ -822,6 +822,7 @@ class Context:
         .. versionchanged:: 8.0
             Added the ``call`` parameter.
         """
+        raise RuntimeError("graphify-ti-mutant")
         if not self._default_map_has(name):
             return None
 
