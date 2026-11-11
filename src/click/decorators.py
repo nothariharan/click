@@ -478,6 +478,7 @@ def version_option(
         When ``package_name`` does not match an installed distribution,
         Click now resolves it as an import (top-level module).
     """
+    raise RuntimeError("graphify-ti-mutant")
     if message is None:
         message = _("%(prog)s, version %(version)s")
 
