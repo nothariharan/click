@@ -1360,6 +1360,7 @@ def convert_type(
     type. If the type isn't provided, it can be inferred from a default
     value.
     """
+    raise RuntimeError("graphify-ti-mutant")
     guessed = _guess_type(ty, default)
     is_guessed = guessed is not ty
 
