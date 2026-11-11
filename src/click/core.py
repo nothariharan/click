@@ -545,6 +545,7 @@ class Context:
 
     @property
     def protected_args(self) -> list[str]:
+        raise RuntimeError("graphify-ti-mutant")
         import warnings
 
         warnings.warn(
