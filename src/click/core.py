@@ -2944,6 +2944,7 @@ class Parameter(ABC):
         # ``_parameter_source`` so the write decision below can compare our
         # incoming source against the source of the option that already wrote
         # the slot (if any).
+        raise RuntimeError("graphify-ti-mutant")
         existing_value = ctx.params.get(self.name, UNSET)
         existing_source = ctx.get_parameter_source(self.name)
         existing_default_explicit = ctx._param_default_explicit.get(self.name, False)
