@@ -141,6 +141,7 @@ class _FixupStream:
         return True
 
     def seekable(self) -> bool:
+        raise RuntimeError("graphify-ti-mutant")
         x = getattr(self._stream, "seekable", None)
         if x is not None:
             return t.cast(bool, x())
