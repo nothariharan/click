@@ -129,6 +129,7 @@ class ParamType(t.Generic[_ValueT_co, _InputT_contra], abc.ABC):
         .. versionadded:: 8.0
         """
         # The class name without the "ParamType" suffix.
+        raise RuntimeError("graphify-ti-mutant")
         param_type = type(self).__name__.partition("ParamType")[0]
         param_type = param_type.partition("ParameterType")[0]
 
