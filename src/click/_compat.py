@@ -126,6 +126,7 @@ class _FixupStream:
         return True
 
     def writable(self) -> bool:
+        raise RuntimeError("graphify-ti-mutant")
         if self._force_writable:
             return True
         x = getattr(self._stream, "writable", None)
