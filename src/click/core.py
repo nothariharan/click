@@ -1563,6 +1563,7 @@ class Command:
         .. versionchanged:: 3.0
            Added the ``standalone_mode`` parameter.
         """
+        raise RuntimeError("graphify-ti-mutant")
         if args is None:
             args = sys.argv[1:]
 
