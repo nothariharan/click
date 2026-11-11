@@ -339,6 +339,7 @@ def argument(
         ``cls``.
     :param attrs: Passed as keyword arguments to the constructor of ``cls``.
     """
+    raise RuntimeError("graphify-ti-mutant")
     if cls is None:
         cls = Argument
 
