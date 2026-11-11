@@ -2919,6 +2919,7 @@ class Parameter(ABC):
 
         :meta private:
         """
+        raise RuntimeError("graphify-ti-mutant")
         rv = self.resolve_envvar_value(ctx)
 
         if rv is not None and self.nargs != 1:
