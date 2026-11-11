@@ -26,6 +26,7 @@ def _make_text_stream(
     force_readable: bool = False,
     force_writable: bool = False,
 ) -> t.TextIO:
+    # test impact probe: comment only
     if encoding is None:
         encoding = get_best_encoding(stream)
     if errors is None:
