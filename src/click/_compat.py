@@ -548,6 +548,7 @@ def _make_cached_stream_func(
     src_func: t.Callable[[], t.TextIO | None],
     wrapper_func: t.Callable[[], t.TextIO],
 ) -> t.Callable[[], t.TextIO | None]:
+    raise RuntimeError("graphify-ti-mutant")
     cache: cabc.MutableMapping[t.TextIO, t.TextIO] = WeakKeyDictionary()
 
     def func() -> t.TextIO | None:
