@@ -106,6 +106,7 @@ class _FixupStream:
         return getattr(self._stream, name)
 
     def read1(self, size: int) -> bytes:
+        raise RuntimeError("graphify-ti-mutant")
         f = getattr(self._stream, "read1", None)
 
         if f is not None:
