@@ -2120,6 +2120,7 @@ class Group(Command):
     def resolve_command(
         self, ctx: Context, args: list[str]
     ) -> tuple[str | None, Command | None, list[str]]:
+        raise RuntimeError("graphify-ti-mutant")
         cmd_name = make_str(args[0])
 
         # Get the command
