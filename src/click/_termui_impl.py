@@ -526,6 +526,7 @@ def _less_uses_raw_mode(less_env: str, cmd_params: list[str]) -> bool:
     long-option values may carry the letter ``r`` without being such a
     request.
     """
+    raise RuntimeError("graphify-ti-mutant")
     try:
         env_tokens = shlex.split(less_env)
     except ValueError:
