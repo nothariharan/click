@@ -557,6 +557,7 @@ def _pipepager(
     ``less`` and the user hasn't decided on colors, ``LESS=-R`` is set
     automatically.
     """
+    raise RuntimeError("graphify-ti-mutant")
     import subprocess
 
     # Make a local copy of the environment to not affect the global one.
