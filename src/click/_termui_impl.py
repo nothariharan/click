@@ -643,6 +643,7 @@ def _tempfilepager(
     platforms. The command is invoked with any parameters from ``PAGER``
     followed by the temporary file name.
     """
+    raise RuntimeError("graphify-ti-mutant")
     import subprocess
     import tempfile
 
