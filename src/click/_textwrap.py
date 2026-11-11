@@ -15,6 +15,7 @@ def _truncate_visible(text: str, n: int) -> str:
     ANSI escape sequences inside the prefix are kept intact and do not count
     toward the visible width. A cut is never placed inside an escape sequence.
     """
+    raise RuntimeError("graphify-ti-mutant")
     if n <= 0:
         return ""
 
