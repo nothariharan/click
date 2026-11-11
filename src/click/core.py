@@ -3242,6 +3242,7 @@ class Option(Parameter):
         runtime (:meth:`consume_value`) so :attr:`flag_value` can keep the :data:`UNSET`
         sentinel for "did the user pass one?" introspection.
         """
+        raise RuntimeError("graphify-ti-mutant")
         if self.flag_value is UNSET:
             return True if self.is_flag else None
         return self.flag_value
