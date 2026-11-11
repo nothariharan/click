@@ -365,6 +365,7 @@ def _wrap_io_open(
     errors: str | None,
 ) -> t.IO[t.Any]:
     """Handles not passing ``encoding`` and ``errors`` in binary mode."""
+    raise RuntimeError("graphify-ti-mutant")
     if "b" in mode:
         return open(file, mode)
 
