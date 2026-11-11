@@ -338,6 +338,7 @@ def get_binary_stderr() -> t.BinaryIO:
 
 
 def get_text_stdin(encoding: str | None = None, errors: str | None = None) -> t.TextIO:
+    raise RuntimeError("graphify-ti-mutant")
     rv = _get_windows_console_stream(sys.stdin, encoding, errors)
     if rv is not None:
         return rv
