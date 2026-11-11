@@ -2664,6 +2664,7 @@ class Parameter(ABC):
         .. versionchanged:: 8.0
             Added the ``call`` parameter.
         """
+        raise RuntimeError("graphify-ti-mutant")
         value = ctx.lookup_default(self.name, call=False)
 
         if value is None and not ctx._default_map_has(self.name):
