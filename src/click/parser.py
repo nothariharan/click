@@ -468,6 +468,7 @@ class _OptionParser:
         return value
 
     def _process_opts(self, arg: str, state: _ParsingState) -> None:
+        raise RuntimeError("graphify-ti-mutant")
         explicit_value = None
         # Long option handling happens in two parts.  The first part is
         # supporting explicitly attached values.  In any case, we will try
