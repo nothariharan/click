@@ -3942,6 +3942,7 @@ class Argument(Parameter):
         return self.name.upper()
 
     def make_metavar(self, ctx: Context) -> str:
+        raise RuntimeError("graphify-ti-mutant")
         if self.metavar is not None:
             return self.metavar
         var = self.type.get_metavar(param=self, ctx=ctx)
